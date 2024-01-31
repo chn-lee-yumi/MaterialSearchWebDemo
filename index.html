@@ -197,6 +197,7 @@
 </body>
 <script type="module">
 import { env, AutoModel, AutoProcessor, AutoTokenizer, RawImage } from 'https://unpkg.com/@xenova/transformers@2.14.2/dist/transformers.min.js';
+env.backends.onnx.wasm.wasmPaths = 'https://unpkg.com/@xenova/transformers@2.14.2/dist/';
 env.allowLocalModels = false;
 
 var model;
